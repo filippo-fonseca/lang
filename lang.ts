@@ -7,7 +7,7 @@ let setLimit = 20;
 for (let i = 0; i < setLimit; i++) {
   // Verbs
   var randomVerb = function (words) {
-    let readME = fs.readFileSync("verbs.txt", "utf8");
+    let readME = fs.readFileSync("dictionary/verbs.txt", "utf8");
     let wordArr = readME.split(", ");
 
     words = words > wordArr.length ? wordArr.length : words;
@@ -26,7 +26,7 @@ for (let i = 0; i < setLimit; i++) {
   };
   // Nouns
   var randomNoun = function (words) {
-    let readME = fs.readFileSync("nouns.txt", "utf8");
+    let readME = fs.readFileSync("dictionary/nouns.txt", "utf8");
     let wordArr = readME.split(", ");
 
     words = words > wordArr.length ? wordArr.length : words;
@@ -46,7 +46,27 @@ for (let i = 0; i < setLimit; i++) {
 
   // Articles
   var randomArt = function (words) {
-    let readME = fs.readFileSync("articles.txt", "utf8");
+    let readME = fs.readFileSync("dictionary/articles.txt", "utf8");
+    let wordArr = readME.split(", ");
+
+    words = words > wordArr.length ? wordArr.length : words;
+
+    var randWords = [];
+    for (let i = 0; i < words; i++) {
+      let newRandom;
+      do {
+        let rand = Math.floor(Math.random() * wordArr.length);
+        newRandom = wordArr[rand];
+      } while (randWords.includes(newRandom));
+
+      randWords.push(newRandom);
+    }
+    return randWords.join(", ");
+  };
+
+  // Articles 2
+  var randomArt2 = function (words) {
+    let readME = fs.readFileSync("dictionary/art2.txt", "utf8");
     let wordArr = readME.split(", ");
 
     words = words > wordArr.length ? wordArr.length : words;
@@ -66,7 +86,7 @@ for (let i = 0; i < setLimit; i++) {
 
   // Adjectives
   var randomAdj = function (words) {
-    let readME = fs.readFileSync("adjectives.txt", "utf8");
+    let readME = fs.readFileSync("dictionary/adjectives.txt", "utf8");
     let wordArr = readME.split(", ");
 
     words = words > wordArr.length ? wordArr.length : words;
@@ -86,7 +106,7 @@ for (let i = 0; i < setLimit; i++) {
 
   function combineIt() {
     let nounPhrase =
-      randomArt(1) + " " + randomAdj(1) + " " + randomNoun(1) + " ";
+      randomArt2(1) + " " + randomAdj(1) + " " + randomNoun(1) + " ";
     let verbPhrase =
       randomVerb(1) +
       " " +
