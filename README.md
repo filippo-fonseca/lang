@@ -6,4 +6,8 @@ Part of an experiment in the theory of universal grammar and computational think
 
 Written in TypeScript.
 
+## Structure
+
+<img src="https://i.ibb.co/CtTSt4j/Untitled-Diagram.png" />
+
 Made with ❤️ by [@filippofonseca](https://www.twitter.com/filippofonseca)
