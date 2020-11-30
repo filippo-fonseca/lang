@@ -8,6 +8,8 @@ Written in TypeScript.
 
 ## Structure
 
+Lang utilizes the following basic sentence structure for its algorithm:
+
 <img src="https://i.ibb.co/CtTSt4j/Untitled-Diagram.png" />
 
 Made with ❤️ by [@filippofonseca](https://www.twitter.com/filippofonseca)
