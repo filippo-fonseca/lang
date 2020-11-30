@@ -10,6 +10,8 @@ Written in TypeScript.
 
 Lang utilizes the following basic sentence structure for its algorithm:
 
+<br />
+
 <img src="https://i.ibb.co/CtTSt4j/Untitled-Diagram.png" />
 
 <br />
