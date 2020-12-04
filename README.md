@@ -54,6 +54,8 @@ Obviously, the algorithm still needs refinement and training to be able to prope
 
 ## Algorithm Snapshot
 
+A small peek at the code that's inside!
+
 ```ts
 for (let i = 0; i < textArr.length; i++) {
       let word = textArr[i].toLowerCase().replace(/[\W_]/, "");
