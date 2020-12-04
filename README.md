@@ -52,7 +52,7 @@ Productive outrageous gazelles repeated a productive beret.
 
 Obviously, the algorithm still needs refinement and training to be able to properly formulate sentences that make sense and are reasonable, but that will come very shortly.
 
-## Algorithm Snapshot
+## Algorithm Snippet
 
 A small peek at the code that's inside (only a small part)!
 
