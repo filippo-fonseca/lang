@@ -28,6 +28,7 @@ Lang also uses a basic markov chain implementation in order to generate the same
 <img src="https://i.ibb.co/k5ryqZ6/Screen-Shot-2020-12-04-at-08-42-58.png" />
 </kbd>
 
+<br></br>
 
 <kbd>
 <img src="https://i.ibb.co/3pkwGW0/Screen-Shot-2020-12-04-at-08-43-39.png" />
