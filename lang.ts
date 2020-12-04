@@ -2,7 +2,7 @@ var fs = require("fs");
 
 let returnIt = "";
 
-let setLimit = 5000;
+let setLimit = 1;
 
 for (let i = 0; i < setLimit; i++) {
   // Verbs
@@ -121,8 +121,38 @@ for (let i = 0; i < setLimit; i++) {
   }
 
   returnIt = returnIt + combineIt();
+
+  const getMarkovVariation = () => {
+    const markovChain = {};
+    const textArr = returnIt.split(" ");
+    for (let i = 0; i < textArr.length; i++) {
+      let word = textArr[i].toLowerCase().replace(/[\W_]/, "");
+      if (!markovChain[word]) {
+        markovChain[word] = [];
+      }
+      if (textArr[i + 1]) {
+        markovChain[word].push(
+          textArr[i + 1].toLowerCase().replace(/[\W_]/, "")
+        );
+      }
+    }
+    const words = Object.keys(markovChain);
+    let word = words[Math.floor(Math.random() * words.length)];
+    let result = "";
+    for (let i = 0; i < words.length; i++) {
+      result += word + " ";
+      let newWord =
+        markovChain[word][Math.floor(Math.random() * markovChain[word].length)];
+      word = newWord;
+      if (!word || !markovChain.hasOwnProperty(word))
+        word = words[Math.floor(Math.random() * words.length)];
+    }
+    console.log("VAR: " + result);
+  };
+
+  getMarkovVariation();
 }
 
-returnIt = returnIt + ".";
+returnIt = "SENTENCE: " + returnIt + ".";
 
 console.log(returnIt);
