@@ -83,4 +83,4 @@ Feel free to take a look at the code and experiment it! If you'd like to change 
 
 <br />
 
-Made with ❤️ by [@FilippoFonseca](https://www.twitter.com/filippofonseca)
+Made with ❤️ by [**@FilippoFonseca**](https://www.twitter.com/filippofonseca).
