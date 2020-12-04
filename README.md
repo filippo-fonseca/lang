@@ -81,7 +81,7 @@ for (let i = 0; i < textArr.length; i++) {
     }
 ```
 
-Feel free to take a look at the code and experiment it! If you'd like to change something or see areas for improval, don't hesitate to submit an issue or pull request! Contributions are welcome.
+Feel free to take a look at the code and experiment with it! If you'd like to change something or see areas for improval, don't hesitate to submit an issue or pull request! Contributions are welcome.
 
 <br />
 
