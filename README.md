@@ -52,6 +52,35 @@ Productive outrageous gazelles repeated a productive beret.
 
 Obviously, the algorithm still needs refinement and training to be able to properly formulate sentences that make sense and are reasonable, but that will come very shortly.
 
+## Algorithm Snapshot
+
+```ts
+for (let i = 0; i < textArr.length; i++) {
+      let word = textArr[i].toLowerCase().replace(/[\W_]/, "");
+      if (!markovChain[word]) {
+        markovChain[word] = [];
+      }
+      if (textArr[i + 1]) {
+        markovChain[word].push(
+          textArr[i + 1].toLowerCase().replace(/[\W_]/, "")
+        );
+      }
+    }
+    const words = Object.keys(markovChain);
+    let word = words[Math.floor(Math.random() * words.length)];
+    let result = "";
+    for (let i = 0; i < words.length; i++) {
+      result += word + " ";
+      let newWord =
+        markovChain[word][Math.floor(Math.random() * markovChain[word].length)];
+      word = newWord;
+      if (!word || !markovChain.hasOwnProperty(word))
+        word = words[Math.floor(Math.random() * words.length)];
+    }
+```
+
+Feel free to take a look at the code and experiment it! If you'd like to change something or see areas for improval, don't hesitate to submit an issue or pull request! Contributions are welcome.
+
 <br />
 
 Made with ❤️ by [@filippofonseca](https://www.twitter.com/filippofonseca)
