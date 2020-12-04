@@ -22,11 +22,12 @@ Lang utilizes the following basic sentence structure to base its algorithm:
 
 Lang also uses a basic markov chain implementation in order to generate the same sentence with a different respective scrambling. According to [brilliant.org](https://www.brilliant.org), A Markov chain is a mathematical system that experiences transitions from one state to another according to certain probabilistic rules. The defining characteristic of a Markov chain is that no matter how the process arrived at its present state, the possible future states are fixed. In other words, the probability of transitioning to any particular state is dependent solely on the current state and time elapsed. The state space, or set of all possible states, can be anything: letters, numbers, weather conditions, baseball scores, or stock performances.
 
+<br></br>
+
 <kbd>
 <img src="https://i.ibb.co/k5ryqZ6/Screen-Shot-2020-12-04-at-08-42-58.png" />
 </kbd>
 
-<br></br>
 
 <kbd>
 <img src="https://i.ibb.co/3pkwGW0/Screen-Shot-2020-12-04-at-08-43-39.png" />
