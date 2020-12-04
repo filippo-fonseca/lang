@@ -8,7 +8,7 @@ Written in TypeScript.
 
 ## Structure
 
-Lang utilizes the following basic sentence structure to base its algorithm:
+Lang utilizes the following basic sentence structure to base its generation algorithm:
 
 <br />
 
