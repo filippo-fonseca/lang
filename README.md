@@ -34,7 +34,6 @@ Lang also uses a basic markov chain implementation in order to generate the same
 <img src="https://i.ibb.co/3pkwGW0/Screen-Shot-2020-12-04-at-08-43-39.png" />
 </kbd>
 
-<br></br>
 
 **Example:**
 
