@@ -85,7 +85,7 @@ Feel free to take a look at the code and experiment with it! If you'd like to ch
 
 Contributions are welcome.
 
-MOre to come soon.
+More to come soon.
 
 <br />
 
