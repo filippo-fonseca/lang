@@ -1,4 +1,4 @@
-# Lang
+# `🧠 Lang`
 
 Has the ability to programatically generate the longest book in the world - ever.
 
