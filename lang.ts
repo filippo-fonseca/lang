@@ -147,12 +147,12 @@ for (let i = 0; i < setLimit; i++) {
       if (!word || !markovChain.hasOwnProperty(word))
         word = words[Math.floor(Math.random() * words.length)];
     }
-    console.log("VAR: " + result);
+    console.log("MARKOV: " + result);
   };
 
   getMarkovVariation();
 }
 
-returnIt = "SENTENCE: " + returnIt + ".";
+returnIt = "ORIGINAL: " + returnIt + ".";
 
 console.log(returnIt);
